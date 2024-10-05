@@ -258,44 +258,66 @@ a:active {
 
 /* || SKILLS || */
 
+.skill{
+    padding: 2rem 0;
+    min-height: 110vh;
+    background-color: black;
+    background-image: url(../IMG/Mountains.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.skill_heading{
+    padding: 3rem 0;
+    font-size: 4rem;
+    text-align: center;
+}
 
+.skills{
+    width: 60%;
+    margin: 2rem auto;
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
 
+/* || PROJECTS || */
 
+.work{
+    padding: 2rem 0;
+    min-height: 100vh;
+    background-color: #190024;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: #670067;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #620b62;
+    transition: transform 0.3s;
+}
+
+/* Contact */
 
 
 /* ANIMATIONS */
 
 
-
-.moving-content {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: -100%;
-    animation: move 20s linear infinite;
-}
-
-.moving-image {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-}
-
-/* Keyframes for the animation */
-@keyframes move {
-    0% {
-        left: -100%;
-    }
-
-    50% {
-        left: 50%;
-    }
-
-    100% {
-        left: 100%;
-    }
-}
 
 
 /* || FOOTER */
