@@ -297,13 +297,13 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 
 .card{
-    width: 400px;
+    width: 300px;
     height: 400px;
     background-color: #ff00eea3;
     padding: 1rem;
@@ -322,7 +322,7 @@ a:active {
 
 .card p{
     width: 80%;
-    margin: 5rem auto;
+    margin: auto;
     color: #fffb00;
     font-size: 1.2rem;
     text-align: center;
@@ -386,7 +386,93 @@ a:active {
     background-color: #190024;
 }
 
+@media screen and (max-width: 1024px) {
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .navbar{
+        display: none;
+    }
+
+    .nowrap{
+        white-space: normal;
+    }
+
+
+    .home_content{
+        max-width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .home_heading{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .home_heading-2{
+        font-size: 1.5rem;
+    }
+
+    .home_text{
+        font-size: 1rem;
+    }
+
+    .horse{
+        display: none;
+    }
+
+    .cliff{
+        display: none;
+    }
+
+    .about{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about img{
+        width: 80%;
+    }
+
+    .about_heading{
+        font-size: 2rem;
+    }
+
+    .about p{
+        max-width: 80%;
+    }
+
+    .skills{
+        width: 90%;
+    }
+
+    .skill_heading{
+        font-size: 3rem;
+    }
+
+    .cards{
+        padding: 1rem 3rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .card p{
+        width: 100%;
+    }
+
+    .form{
+        width: 80%;
+    }
+    
+}
 
 
 
