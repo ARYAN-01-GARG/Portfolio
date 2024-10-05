@@ -78,7 +78,7 @@ html{
 body{
     background-image: url(../IMG/home\ bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 110vh;
     min-height: 100vh;
     width: 100%;
 
@@ -118,10 +118,7 @@ a:active {
 
 .header{
     padding: 0.5rem 2rem;
-    position: sticky;
-    background: transparent;
-    top: 0;
-    z-index: 20;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +126,7 @@ a:active {
 
 .logo{
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--HIGHLIGHT-COLOR);
 }
 
@@ -217,6 +214,88 @@ a:active {
     height: 86vh;
 }
 
+/* || ABOUT || */
+
+.about_section{
+    padding: 2rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background: radial-gradient(circle, rgb(73, 11, 97) 0%, rgb(21, 0, 26) 100%);
+}
+
+.about img{
+    filter: drop-shadow(0 0 100px #ff00ff);
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.about_heading{
+    color: #a90df0;
+    filter: drop-shadow(0 0 70px #ff00ee);
+    font-size: 2.5rem;
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.about p{
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.2rem;
+    color: #c6a500;
+    filter: brightness(1.5);
+}
+
+/* || SKILLS || */
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+
+.moving-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -100%;
+    animation: move 20s linear infinite;
+}
+
+.moving-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Keyframes for the animation */
+@keyframes move {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
 
 
 /* || FOOTER */
