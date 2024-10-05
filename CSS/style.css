@@ -34,19 +34,20 @@ textarea {
 
     /* COLORS */
 
-    --BGCOLOR: #fff;
-    --TEXT-COLOR : #000;
+    --BGCOLOR: #2b282b;
+    --TEXT-COLOR : #fff;
+    --HIGHLIGHT-COLOR : #a90df0;
+    --LINK-COLOR: #ed7c03;
+    --LINK-ACTIVE: #ff0090;
+    --LINK-HOVER: #ff00ff;
 
 
     /* BORDER*/
-    --BORDER: 1px solid var(--BORDER-COLOR);
 
     /* STANDARD PADDING */
-    --PADDING-TB: 0.25rem;
-    --PADDING-SIDE: 2.5%;
+    
 
     /* STANDARD MARGIN */
-    --MARGIN: clamp(1em, 2.5vh, 1.5em);
 }
 
 /* || UTILITY CLASSES */
@@ -71,9 +72,13 @@ html{
     font-family: var(--FF);
     scroll-behavior: smooth;
     background-color: var(--BGCOLOR);
+    color: var(--TEXT-COLOR);
 }
 
 body{
+    background-image: url(../IMG/home\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     width: 100%;
 
@@ -109,35 +114,107 @@ a:active {
     color: var(--LINK-ACTIVE);
 }
 
-/* || HEADER */
+/* || HEADER || */
 
 .header{
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    padding: 0.5rem 2rem;
     position: sticky;
+    background: transparent;
     top: 0;
-    z-index: 1;
+    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo{
+    margin: 1rem;
+    font-size: 2rem;
+    color: var(--HIGHLIGHT-COLOR);
+}
+
 .navbar{
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    margin: 0 1rem;
+    padding: 0 .5rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .navbar a{
+    padding: 10px 0;
     text-decoration: none;
+    font-weight: 600;
 }
 
 /* || MAIN  || */
 
 .main{
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    position: relative;
+}
+
+.home{
+    height: 86vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.home_content{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding-left: 3rem;
+    margin: 0 2rem;
+}
+
+.home_heading{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-1{
+    background-image: linear-gradient(90deg, #fa00dd 0%, #ffb700 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-2{
+    background-image: linear-gradient(90deg, #07fffb 0%, #ff00ff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home_heading-2{
+    max-width: 80%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.home_text{
+    font-size: 1.1rem;
+    color: #96b0b5;
+}
+
+.horse{
+    position: absolute;
+    z-index: 10;
+    top: -50px;
+    right: 100px;
+}
+
+
+.cliff{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80vh;
+    height: 86vh;
 }
 
 
